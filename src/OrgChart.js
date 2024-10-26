@@ -3,11 +3,12 @@ import * as d3 from 'd3';
 import axios from 'axios';
 import "./OrgChart.css";
 
+const host = 'http://localhost:8081';
 const OrgChart = () => {
     const chartRef = useRef(null); // Ref to hook the D3 chart
 
     useEffect(() => {
-        axios.get('http://localhost:8081/employees/hierarchy')
+        axios.get(`${host}/employees/hierarchy`)
             .then(response => {
                 const hierarchyData = convertToHierarchy(response.data);
                 renderChart(hierarchyData);
