@@ -1,0 +1,77 @@
+/* EmployeeForm.css */
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(50px); 
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); 
+    }
+  }
+  
+  .form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-in-out;
+    border: 2px solid #007bff; 
+    position: relative;
+  }
+  
+  /* Adding elephant background or logo */
+  .form-container:before {
+    content: '';
+    background-image: url('/public/Picture1.jpg'); 
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -30px;
+    left: calc(50% - 25px); 
+    width: 50px;
+    height: 50px;
+  }
+  
+  /* Form inputs and button styles */
+  form input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+  }
+  
+  form button {
+    padding: 10px 15px;
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1.1em;
+  }
+  
+  form button:hover {
+    background-color: #ff0000; 
+  }
+  
+  h2 {
+    color: #007bff; 
+    text-align: center;
+  }
+  
+  /* Background Image */
+  body {
+    background-color: #f0f0f0; 
+    background-image: url('/public/Elphant-logo.png'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+  }
+  
