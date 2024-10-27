@@ -103,15 +103,15 @@ const OrgChart = () => {
         <div id="legend" className="legend">
             <p><b>Legend: Roles</b></p>
             <ol>
-                <li>1. Human Resources Performance Management</li>
-                <li>2. SAP Consultant</li>
-                <li>3. Associate Partner</li>
-                <li>4. Associate Consultant</li>
-                <li>5. SAP Technical Consultant</li>
-                <li>6. Technical Consultant</li>
-                <li>7. IT Support Specialist</li>
-                <li>8. SAP Functional Consultant </li>
-                <li>9. CEO</li>
+                <li>Human Resources Performance Management</li>
+                <li>SAP Consultant</li>
+                <li>Associate Partner</li>
+                <li>Associate Consultant</li>
+                <li>SAP Technical Consultant</li>
+                <li>Technical Consultant</li>
+                <li>IT Support Specialist</li>
+                <li>SAP Functional Consultant </li>
+                <li>CEO</li>
             </ol>
         </div>
         
