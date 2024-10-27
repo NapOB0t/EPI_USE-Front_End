@@ -1,7 +1,8 @@
 /*EmployeeService Page*/
 import axios from 'axios';
 
-const API_URL = 'http://localhost:8081/employees';
+const host = "https://epi-use-backend.onrender.com";
+const API_URL = `${host}/employees`;
 
 export const getEmployees = async () => {
     const response = await axios.get(API_URL);
@@ -14,7 +15,7 @@ export const createEmployee = async (employeeData) => {
 }
 
 export const updateEmployee = async (emp_number, employeeData) => {
-    const response = await axios.post(`${API_URL}/${emp_number}`, employeeData);
+    const response = await axios.put(`${API_URL}/${emp_number}`, employeeData);
     return response.data;
 };
 

@@ -3,11 +3,12 @@ import * as d3 from 'd3';
 import axios from 'axios';
 import "./OrgChart.css";
 
+const host = 'https://epi-use-backend.onrender.com';
 const OrgChart = () => {
     const chartRef = useRef(null); // Ref to hook the D3 chart
 
     useEffect(() => {
-        axios.get('http://localhost:8081/employees/hierarchy')
+        axios.get(`${host}/employees/hierarchy`)
             .then(response => {
                 const hierarchyData = convertToHierarchy(response.data);
                 renderChart(hierarchyData);
@@ -109,6 +110,8 @@ const OrgChart = () => {
                 <li>5. SAP Technical Consultant</li>
                 <li>6. Technical Consultant</li>
                 <li>7. IT Support Specialist</li>
+                <li>8. SAP Functional Consultant </li>
+                <li>9. CEO</li>
             </ol>
         </div>
         
