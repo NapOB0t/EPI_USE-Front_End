@@ -1,7 +1,7 @@
 /*EmployeeService Page*/
 import axios from 'axios';
 
-const host = "http://localhost:8081";
+const host = "https://epi-use-backend.onrender.com";
 const API_URL = `${host}/employees`;
 
 export const getEmployees = async () => {
